@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Del clàssic al drop</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+:root { --bg: #07080b; --panel: #101219; --line: #23262f; --txt: #eef0f3; --dim: #8a8f9e; --cos: #f4a259; --cara: #9ef0c5; --ant1: #e06c6c; --ant2: #ffd166; }
+:root[data-theme="light"] { --bg: #f6f3ee; --panel: #ffffff; --line: #e3ddd2; --txt: #17181c; --dim: #5d6170; --cos: #c96a1c; --cara: #1d8a5c; }
+* { box-sizing: border-box; margin: 0; }
+body { background: var(--bg); color: var(--txt); font: 16px/1.55 "JetBrains Mono", ui-monospace, monospace; padding: 32px 16px 56px; }
+.wrap { max-width: 980px; margin: 0 auto; }
+.top { display: flex; align-items: center; gap: 10px; font-size: 13px; letter-spacing: .14em; color: var(--dim); }
+.top i { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.top i:nth-child(1) { background: var(--ant1); } .top i:nth-child(2) { background: var(--ant2); }
+h1 { font: 400 clamp(40px, 8vw, 76px)/1 "Archivo Black", sans-serif; margin: 22px 0 14px; }
+h1 em { font-style: normal; color: var(--cos); }
+.lede { max-width: 640px; color: var(--dim); }
+.lede b { color: var(--txt); font-weight: 700; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 36px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+.card video { width: 100%; aspect-ratio: 9 / 16; border-radius: 10px; background: #000; display: block; }
+.tag { margin-top: 14px; font-size: 12px; letter-spacing: .14em; color: var(--cos); }
+.card h2 { font: 400 26px/1.1 "Archivo Black", sans-serif; margin: 6px 0 8px; }
+.card p { color: var(--dim); font-size: 14px; }
+.card p b { color: var(--txt); }
+.how { margin-top: 40px; border-top: 1px solid var(--line); padding-top: 22px; display: grid; gap: 10px; font-size: 14px; color: var(--dim); }
+.how b { color: var(--cara); font-weight: 700; }
+footer { margin-top: 36px; font-size: 12px; color: var(--dim); letter-spacing: .06em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><i></i><i></i><span>LA PAUTA · DEL CLÀSSIC AL DROP</span></div>
+  <h1>Del clàssic <em>al drop</em></h1>
+  <p class="lede">Shorts verticals de menys d'un minut per a <b>3r i 4t d'ESO</b>: una obra clàssica de domini públic convertida en una tècnica de producció d'avui. Quatre passos, un repte d'oïda i una recepta per provar-ho al DAW. Tot fet per codi: el piano roll, el so i la música.</p>
+
+  <div class="grid">
+    <article class="card">
+      <video src="bach-arpegi.mp4" poster="bach.png" controls playsinline preload="metadata"></video>
+      <div class="tag">01 · ARPEGI · BACH (1722)</div>
+      <h2>L'arpegi del trance</h2>
+      <p>El Preludi en do major de Bach, nota per nota, convertit en un arpegi de trance a 138 BPM. <b>Acord → un pis amunt → d'una en una → capes</b>, i repte: les notes pugen o baixen?</p>
+    </article>
+    <article class="card">
+      <video src="reggaeton-dembow.mp4" poster="reggaeton.png" controls playsinline preload="metadata"></video>
+      <div class="tag">02 · RITME · BIZET (1875)</div>
+      <h2>El ritme del reggaeton</h2>
+      <p>La Habanera de <i>Carmen</i> i el seu ritme de tres-i-tres-i-dos, fins al dembow del reggaeton. Capes de bateria i baix per entendre d'on ve el ritme que coneixen tots.</p>
+    </article>
+    <article class="card">
+      <video src="baix-house.mp4" poster="baix.png" controls playsinline preload="metadata"></video>
+      <div class="tag">03 · BAIX · PACHELBEL (c. 1680)</div>
+      <h2>El baix del house</h2>
+      <p>Les 8 notes greus del Cànon de Pachelbel, la música de les bodes, convertides en un baix de house a contratemps: <b>notes → bombo → baix entre cop i cop → capes</b>.</p>
+    </article>
+    <article class="card">
+      <video src="drill-808.mp4" poster="drill.png" controls playsinline preload="metadata"></video>
+      <div class="tag">07 · 808 · BEETHOVEN (1808)</div>
+      <h2>L'808 del drill</h2>
+      <p>El pa-pa-pa-paaam de la Cinquena, una octava avall en un 808 amb <b>glide</b>: la nota no salta, llisca. El truc dels baixos del drill, en quatre passos i amb repte final.</p>
+    </article>
+    <article class="card">
+      <video src="filtre.mp4" poster="filtre.png" controls playsinline preload="metadata"></video>
+      <div class="tag">10 · FILTRE · MOZART (1783)</div>
+      <h2>El filtre</h2>
+      <p>La Marxa turca amb un sinte: per què el filtre no fa res amb una ona sinusoïdal, i com sona amb <b>dent de serra, tall (cutoff) i ressonància</b>.</p>
+    </article>
+    <article class="card">
+      <video src="autotune.mp4" poster="autotune.png" controls playsinline preload="metadata"></video>
+      <div class="tag">16 · AUTOTUNE · SCHUBERT (1825)</div>
+      <h2>L'autotune del pop</h2>
+      <p>L'Ave Maria cantada desafinada: l'autotune enganxa cada nota a la <b>fila més propera del piano roll</b>, i si va molt ràpid, sona a robot.</p>
+    </article>
+    <article class="card">
+      <video src="hook.mp4" poster="hook.png" controls playsinline preload="metadata"></video>
+      <div class="tag">21 · HOOK · BEETHOVEN (1810)</div>
+      <h2>El hook del pop</h2>
+      <p>Dues notes de Für Elise: <b>dibuixa, copia i enganxa, transposa el bloc 7 files avall</b> i posa-ho sobre un beat. Així es construeix un ganxo.</p>
+    </article>
+    <article class="card">
+      <video src="sincopa.mp4" poster="sincopa.png" controls playsinline preload="metadata"></video>
+      <div class="tag">22 · SÍNCOPA · BRAHMS (1869)</div>
+      <h2>El groove del reggaeton</h2>
+      <p>Una dansa hongaresa al piano roll: <b>arrossega la nota llarga dues caselles enrere</b> i ja és una síncopa; després, el dembow i el drop.</p>
+    </article>
+    <article class="card">
+      <video src="trap-trist.mp4" poster="trap.png" controls playsinline preload="metadata"></video>
+      <div class="tag">24 · MODE · BEETHOVEN (1824)</div>
+      <h2>El trap trist</h2>
+      <p>L'Himne de l'alegria: <b>arrossega els fa♯ una fila avall</b> i passa de major a menor. Hi afegeixes un 808, hi-hats ràpids i caixa al 3: trap fosc.</p>
+    </article>
+    <article class="card">
+      <video src="poliritmia.mp4" poster="poliritmia.png" controls playsinline preload="metadata"></video>
+      <div class="tag">25 · POLIRÍTMIA · CHOPIN (1834)</div>
+      <h2>16 contra 12</h2>
+      <p>La Fantasia-impromptu amb <b>dues graelles alhora</b>: hi-hat a 16, shaker a 12. Les capes no coincideixen i el beat es gronxa, amb aire d'afrobeats.</p>
+    </article>
+    <article class="card">
+      <video src="melodia.mp4" poster="melodia.png" controls playsinline preload="metadata"></video>
+      <div class="tag">30 · MELODIA · MOZART (c. 1781)</div>
+      <h2>Compon una melodia amb el ratolí</h2>
+      <p>La cançó de l'estrelleta com a recepta: <b>escala, notes de l'acord als temps forts, pregunta-resposta i acabar al do</b>. I la teva melodia, en lo-fi.</p>
+    </article>
+  </div>
+
+  <div class="how">
+    <div><b>A classe:</b> posa'l sencer (≈ 1 min) i atura'l a la pregunta del repte perquè el grup voti abans de veure la resposta.</div>
+    <div><b>Després:</b> la targeta final és una recepta per fer-ne captura i provar-la a qualsevol DAW o a l'ordinador de l'aula.</div>
+  </div>
+  <footer>La Pauta · Aulatech · veu sintètica · material per a ús a l'aula</footer>
+</div>
+</body>
+</html>
